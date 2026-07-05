@@ -9,6 +9,9 @@ on:
 jobs:
   preprocess:
     runs-on: ubuntu-latest
+    # Memberikan izin kepada bot untuk menulis/push data ke repo
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout Repository
