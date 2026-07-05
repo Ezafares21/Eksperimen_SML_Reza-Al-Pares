@@ -32,5 +32,5 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action Bot"
-        git add Credit_Scoring_Bank_preprocessing/
+        git add preprocessing/Credit_Scoring_Bank_preprocessing/
         git diff --quiet && git diff --staged --quiet || (git commit -m "chore: automated preprocessing clean dataset" && git push)
